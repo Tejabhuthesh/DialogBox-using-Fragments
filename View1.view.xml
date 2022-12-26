@@ -1,0 +1,25 @@
+<mvc:View controllerName="dilogboxid.dilogbox.controller.View1" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+    <Dialog id="idDialog" >
+        <List id="ShotrtProductList" headerText="Employee ID" items="{Data1>/}"  >
+            <items>
+                <StandardListItem 	type="Active"  title="{Data1>Age}" description="{Data1>Name}" press="onClick" 	selected="{selected}" />
+            </items>
+        </List>
+        <HBox justifyContent="End" alignItems="Start">
+            <!-- <Button type="Transparent" text="OK" press="okPress" /> -->
+            <Button type="Transparent" text="Cancel" press="CancelPress" />
+        </HBox>
+        
+        <!-- <beginButton>
+             <Button type="Emphasized" text="OK" press="okPress" /> 
+            <Button type="Emphasized" text="Cancel" press="CancelPress" />
+        </beginButton> -->
+    </Dialog>
+    <l:VerticalLayout class="sapUiContentPadding" width="100%">
+        <Label text="Employee ID" />
+        <Input id="employee" width="10rem" placeholder="Enter Id" showSuggestion="true" showValueHelp="true" valueHelpRequest="onPress" >
+         
+            
+        </Input>
+    </l:VerticalLayout>
+</mvc:View>
